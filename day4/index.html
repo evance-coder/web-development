@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuickNotes Editor</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>QuickNotes</h1>
+      <button id="theme-toggle" type="button">Dark mode</button>
+    </header>
+
+    <main>
+      <label for="note-text">Write your note</label>
+      <textarea
+        id="note-text"
+        rows="6"
+        placeholder="Start typing... (Esc clears the box)"
+      ></textarea>
+
+      <p id="char-count">0 / 200 characters</p>
+      <p id="word-count">0 words</p>
+
+      <button id="clear-btn" type="button">Clear</button>
+    </main>
+  </body>
+</html>
