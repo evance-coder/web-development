@@ -1,0 +1,8 @@
+<!-- DRAFT: change anything below that is not true for you (especially the feedback you received), then delete this line. -->
+# Reflection
+
+**The most difficult concept.** The hardest idea was thinking about many users at the same moment: scaling and consistency. At first, estimates such as "requests per second" felt like guesses, and I could not see how a seat could be sold twice when my code checked that it was free. I overcame this by writing every calculation step by step (users, requests per day, requests per second, then peak) and by drawing what happens when two people click at the same time. Running SQL in the SQLite playground, and seeing a conditional `UPDATE` change zero rows for the second person, finally made transactions and constraints make sense.
+
+**What I would improve.** Based on the feedback on my capstone and my own review, I would improve the data model and the API client. My design relies on the application to check that a note and a tag belong to the same user, so I would enforce this in the database. I would also add editing and pagination to the client, so it uses more of the API that I designed instead of only loading, creating and deleting.
+
+**What I will learn next.** I want to build a real backend, using Node.js and a SQL database, so that the designs I wrote become working services. After that I want to learn authentication, automated testing and deployment, and finish with a project that other people can use online.
